@@ -1,4 +1,5 @@
-class Increment
+                                POST INCREMENT
+class PostIncrement
 {
  public static void main(Strings[] args)
    {
@@ -9,3 +10,17 @@ class Increment
 }
 
 output: 5
+
+                                 PRE INCREMENT
+                                 
+class PreIncrement
+{
+public static void main(Strings[] args)
+   {
+      int i = 5;
+      int j = ++i;    //pre increment 
+      System.out.println(j);
+      }
+}
+  
+  output: 6
