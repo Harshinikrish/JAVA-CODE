@@ -1,0 +1,10 @@
+class ShortHand
+{
+ public static void main(string[] args)
+  {
+     int i=5;
+     i+=2;     //i=i+2;
+     System.out.println(i);
+     }
+ }
+ output : 7
