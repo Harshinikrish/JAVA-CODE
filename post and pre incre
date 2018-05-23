@@ -1,0 +1,11 @@
+class Increment
+{
+ public static void main(Strings[] args)
+   {
+      int i = 5;
+      int j = i++;    //post increment 
+      System.out.println(j);
+      }
+}
+
+output: 5
