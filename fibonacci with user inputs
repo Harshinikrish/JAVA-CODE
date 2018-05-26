@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Patterns {
+
+   
+    public static void main(String[] args) {
+     int b = 0;
+     int c = 1;
+     Scanner sc=new Scanner(System.in);
+        System.out.println("enter the range");
+        int n= sc.nextInt();
+        System.out.printf("\n %d %d ",b,c);
+        int d = b+c;
+        System.out.print(d + " ");
+        while(d<=n)
+        {
+         b=c;
+         c=d;
+         d=b+c;
+         if(d>n)
+             break;
+                  System.out.print(d + " " ); 
+ 
+        }
+    }
+}
+
+output:
+enter the range: 20  //input from user
+0 1 1 2 3 5 8 13      //fibonacci series according to user input 
