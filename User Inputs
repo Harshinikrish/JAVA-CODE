@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Patterns {
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);   // press ctrl+shift+i (in netbeans to import scanner) 
+        System.out.println("enter the range");
+        int n= sc.nextInt();
+        System.out.println("the value is" + n);
+    }
+}
+output:
+enter the range
+20
+the value is 20
