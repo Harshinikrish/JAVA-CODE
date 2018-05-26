@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Patterns {
+public class UserInputs {
     public static void main(String[] args) {
      Scanner sc=new Scanner(System.in);   // press ctrl+shift+i (in netbeans to import scanner) 
         System.out.println("enter the range");
