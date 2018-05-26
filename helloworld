@@ -5,3 +5,5 @@ class HelloWorld
           System.out.println("hello world");
      }
 }
+output:
+hello world
