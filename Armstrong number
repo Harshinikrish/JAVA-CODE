@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Armstrong {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value");
+        int n= sc.nextInt();
+        int arms=0,r;
+        int temp=n;
+        while(n>0)
+        {
+        r=n%10;
+        arms=arms+(r*r*r);
+        n=n/10;
+        }
+        if(temp==arms)
+            System.out.println("the number is arms");
+        else
+            System.out.println("the number is not arms");
+    }
+}
+output:
+enter the value:
+153
+the number is arms
+
+enter the value
+251
+this is not arms
