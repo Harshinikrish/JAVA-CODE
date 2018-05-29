@@ -1,0 +1,80 @@
+public class Array {
+
+    public static void main(String[] args) {
+        
+        int c[]={1,2,3};
+        for(int i : c)
+        {
+          System.out.println(i);
+        }
+   }  
+}
+output :
+1
+2
+3
+-------------------------------**********************---------------------------
+public class Arrayli {
+
+    public static void main(String[] args) {
+        
+        int c[][]={
+                     {1,2,3},
+                     {2,4,5},
+                     {1,4,5}
+                     };
+                     
+        for(int i[] : c)
+        {
+              for(j : i)
+              {
+        
+            System.out.print(j);   // j will fetch the value of i then i will fetch values of c
+        }
+                  System.out.println("");
+        }
+    }
+}
+output
+1 2 3
+2 4 5
+1 4 5
+-------------------------------------*****************************------------------------------
+public class Arrayli {
+
+    public static void main(String[] args) {
+        
+        int c[][][]=new int[2][2][2];
+           for (int i=0;i<2;i++)
+           {
+            for(int j=0;j<2;j++)   
+            {
+                for(int k=0;k<2;k++)
+                {
+                    c[i][j][k]=i+j+k+1;
+                }
+            }
+           }
+        for(int i[][] : c)
+        {
+            for(int j[] : i)
+            {
+            for(int k: j) 
+        
+            {
+            System.out.print(k);
+        }
+            System.out.println("");
+    }
+        }
+        
+    }
+}
+output:
+12
+23
+23
+34
+
+
+
