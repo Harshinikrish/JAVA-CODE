@@ -1,0 +1,42 @@
+public class Array {
+
+    public static void main(String[] args) {
+        
+        int c[][][]=new int[3][3][3];
+        
+        for (int i=0;i<c.length;i++)
+           {
+               for(int j=0;j<c.length;j++)
+               {
+                   for(int k=0;k<c.length;k++)
+                   {
+                        c[i][j][k]=i+j+k+1;
+                        }
+                     }
+              }
+       
+           for (int i=0;i<c.length;i++)
+           {
+               for(int j=0;j<c.length;j++)
+               {
+                   for(int k=0;k<c.length;k++)
+                   {
+       
+            System.out.print(c[i][j][k]);
+        }
+            System.out.println("");
+    }
+        }
+        
+    }
+}
+output:
+123
+234
+345
+234
+345
+456
+345
+456
+567
