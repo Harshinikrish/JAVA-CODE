@@ -1,0 +1,21 @@
+public class JavaApplication16 {
+public static void main(String[] args){
+  A obj=new A();      
+   obj.show(5);
+   
+    }
+}
+class A
+{
+    public void show()
+    {   
+            System.out.println("the one");  
+    }    
+        public void show(int i)
+        {
+            System.out.println("the two");
+        }
+}
+
+output:
+the two
