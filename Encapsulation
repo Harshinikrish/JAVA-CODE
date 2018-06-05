@@ -1,0 +1,34 @@
+public class Encapsulation 
+{
+public static void main(String[] args)
+{
+     Student obj=new Student();
+     obj.setStdid(1);
+       System.out.println(obj.getStdid());
+       obj.setStdname("abc");
+        System.out.println(obj.getStdname());
+    }
+    
+} 
+class Student
+{
+           private int stdid;
+      private String stdname;
+
+    public int getStdid() {
+        return stdid;
+    }
+    public void setStdid(int stdid) {
+        this.stdid = stdid;
+    }
+    public void setStdname(String stdname) {
+        this.stdname = stdname;
+    }
+    public String getStdname() {
+        return stdname;
+    }
+}   
+
+output:
+1
+abc
