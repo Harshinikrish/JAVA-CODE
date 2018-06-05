@@ -1,0 +1,45 @@
+public class JavaApplication16 {
+public static void main(String[] args) {
+    Mul obj=new Mul();
+    obj.a=5;
+    obj.b=4;
+    obj.add();
+   
+        System.out.println("the value is" + obj.result);
+        obj.sub();
+        System.out.println("the value is" + obj.result);
+    obj.mul();
+        System.out.println("the value is" + obj.result);
+    
+    }
+    
+} 
+class Add
+{
+    int a,b,result;
+    public void add()
+    {
+         result=a+b;
+    }
+}
+class Sub extends Add
+{
+    public void sub()
+    {
+         result=a-b;
+        
+    }
+}
+class Mul extends Sub
+{
+    public void mul()
+    {
+         result=a*b;
+        
+    }
+}
+
+ output:
+ the value is: 9
+ the value is:1
+ the value is :20
