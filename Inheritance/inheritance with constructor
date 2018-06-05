@@ -1,0 +1,28 @@
+public class Inherit {
+public static void main(String[] args){
+   A obj=new A(5);      
+    }
+}
+class A
+{
+    public A()
+    {   
+            System.out.println("the one");  
+    }    
+        public A(int i)
+        {
+            System.out.println("the two");
+        }
+}
+
+class B extends A
+{
+    public B()
+    {
+        System.out.println("the three");
+        }
+               public B(int i)
+               {
+                   System.out.println("the four");
+               }
+    }
