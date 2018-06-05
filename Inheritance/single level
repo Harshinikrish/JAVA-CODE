@@ -1,0 +1,34 @@
+public class JavaApplication16 {
+public static void main(String[] args) {
+    Sub obj=new Sub();
+    obj.a=5;
+    obj.b=4;
+    obj.add();
+   
+        System.out.println("the value is" + obj.result);
+        obj.sub();
+        System.out.println("the value is" + obj.result);
+    
+    }
+    
+} 
+class Add
+{
+    int a,b,result;
+    public void add()
+    {
+         result=a+b;
+    }
+}
+class Sub extends Add
+{
+    public void sub()
+    {
+         result=a-b;
+        
+    }
+}
+
+output:
+the value is 9
+the value is 1
