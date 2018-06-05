@@ -1,0 +1,32 @@
+public class JavaApplication16 {
+public static void main(String[] args){
+  B obj =new B(5);
+  }
+}
+class A
+{
+    public A()
+    {
+        System.out.println("new para A");
+    }
+    public A(int i)
+    {
+        System.out.println("new para A with int");
+    }
+}
+class B extends A
+{
+    public B()
+    {
+        System.out.println("new para B ");
+    }
+    public B(int i)
+    {
+         super(i);
+        System.out.println("new para B with int");
+    }
+}
+
+output:
+new para A with int
+new para B with int
