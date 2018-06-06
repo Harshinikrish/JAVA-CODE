@@ -1,0 +1,104 @@
+public class MyInterFACE {
+public static void main(String[] args){
+    A obj=new B();
+    obj.add();
+}
+}
+interface A
+{
+    public void add();
+            }
+class B implements A
+{
+    public void add()
+    {
+        System.out.println("this is interface");
+    }
+}
+output:
+this is interface
+-----------------------------**********************************************-----------------------------------------------
+public class MyInterFACE {
+public static void main(String[] args){
+    C obj=new C();
+    obj.add();
+    obj.sub();
+}
+}
+interface A
+{
+    public void add();
+            }
+interface B
+{
+public void sub();
+}           
+class C implements A,B
+{
+    public void add()
+    {
+        System.out.println("this is add interface");
+    }
+    public void sub()
+    {
+    System.out.println("this is sub interface");
+    }
+}
+    output:
+    this is add interface
+    this is mul interface
+    -------------------------------------**************************-------------------------------
+    public class JavaApplication16 {
+public static void main(String[] args){
+    A obj=new B();
+    C obj1=new B();
+    obj.add();
+    obj1.sub();
+    
+}
+}
+interface A
+{
+    public void add();
+            }
+interface C
+{
+    public void sub();
+            }
+class B implements A,C
+{
+    public void add()
+    {
+        System.out.println("this is add interface");
+    }
+    public void sub()
+    {
+        System.out.println("thisis sub interface");
+    }
+    public void mul()
+    {
+        System.out.println("this is mul interface");
+    }
+}
+
+output:
+this is add interface
+this is sub interface
+--------------------------------------*****************************--------------------------------------------    
+public class MyInterFace{
+public static void main(String[] args){
+    A obj=new A();
+    {
+    public void add()
+    {
+    System.out.println("this is interface");
+    }
+    }
+}
+}
+interface A
+{
+    public void add();
+ }
+ output:
+ this is interface
