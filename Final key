@@ -1,0 +1,61 @@
+                                    Final Variable
+                             
+
+public class JavaApplication16 {
+public static void main(String[] args){
+    Final int i=5;
+    i++;            // error 
+    System.out.println(i);
+}
+}
+
+result:
+As the variable i is final it cant be incremented or changed.
+--------------------------------------------------*******************************-----------------------------------------------
+
+                                                 Final Class
+
+public class KeyFinal {
+public static void main(String[] args){
+B obj=new B();
+obj.Show();
+}
+}
+final class A 
+{
+    public void show()
+    {
+        System.out.println("A is value");
+    }
+}
+class B extends A      // error
+{
+}
+
+
+result:
+As class A is final no other class can extends or inherits A
+-----------------------------***********************************----------------------------------------------------------
+
+                                     Final Method
+public class keyFinal {
+public static void main(String[] args){
+}
+}
+class A
+{
+   final public void show()
+    {
+        System.out.println("A is value");
+    }
+}
+class B extends A
+{
+    public void show()               // here error will occurs
+    {
+        System.out.println("the class B");
+    }
+}
+
+result :
+As the method show() in class A is final then the class B cant use the same method .
