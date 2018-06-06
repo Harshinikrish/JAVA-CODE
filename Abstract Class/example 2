@@ -1,0 +1,30 @@
+public class JavaApplication16 {
+public static void main(String[] args){
+    IPhone obj=new IPhone();
+    SamsungS4 obj1=new SamsungS4();
+     obj1.showconfig();
+}
+}
+
+abstract class Phone
+{
+    public abstract void showconfig();
+    }
+    
+claass IPhone extends Phone
+{
+    public void showconfig()
+    {
+        System.out.println("this is i phone");
+    }
+}
+class SamsungS4 extends Phone
+{
+    public void showconfig()
+    {
+        System.out.println("this is S4 phone");
+    }
+}
+
+output:
+this is S4 phone
